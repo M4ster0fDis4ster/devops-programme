@@ -26,7 +26,7 @@ jobs:
 
       - name: Build and push Docker image
         run: |
-          docker build -t m4ster0fdis4ster/nginx-homework:latest .
+          docker build -t m4ster0fdis4ster/nginx-homework:latest ./Github-actions
           docker push m4ster0fdis4ster/nginx-homework:latest
         env:
           DOCKER_BUILDKIT: 1
